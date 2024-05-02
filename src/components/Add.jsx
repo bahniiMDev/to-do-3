@@ -20,7 +20,10 @@ const Add = () => {
 			className=' bg-gray-200 backdrop-blur-md rounded-[28px] fixed bottom-8 right-8 w-14 h-14 
 			'
 		>
-			<div id='cont-add' className='w-full h-full p-6 overflow-auto'>
+			<div
+				id='cont-add'
+				className='w-full h-full p-6 overflow-auto bg-transparent'
+			>
 				<form
 					action=''
 					onSubmit={e => {
