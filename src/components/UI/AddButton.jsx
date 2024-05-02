@@ -6,7 +6,11 @@ const AddButton = forwardRef(({ onClickButton, open }, inputRef) => {
 			id='button'
 			onClick={() => {
 				onClickButton()
-				!open ? inputRef.current.focus() : inputRef.current.blur()
+				!open
+					? setTimeout(() => {
+							inputRef.current.focus()
+					  }, 1000)
+					: inputRef.current.blur()
 			}}
 			className=' bg-blue fixed right-0 bottom-0 w-14 h-14 flex-center'
 			style={{
