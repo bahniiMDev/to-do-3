@@ -5,7 +5,7 @@ const ListGroup = ({ body, color, children }) => {
 	return (
 		<div
 			className='p-8 bg-gray-200 rounded-[28px] mb-4 flex
-		flex-col'
+		flex-col overflow-auto'
 		>
 			<Task title={true} body={body} color={color} />
 			{children}

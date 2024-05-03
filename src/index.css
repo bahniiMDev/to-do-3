@@ -18,17 +18,21 @@ body {
   }
 
   .input-add {
-    @apply bg-[#333] py-2.5 px-5 w-full text-white rounded-xl text-base placeholder:text-gray-300 mb-3 opacity-0 scale-0 translate-y-10 transition-shadow
+    @apply bg-[#333] py-2.5 px-5 w-full text-white rounded-xl text-base placeholder:text-gray-300 mb-3 opacity-0 scale-0 translate-y-10 transition-shadow font-semibold
   }
 
   .select-add {
-    @apply bg-[#333] py-2.5 px-5 w-full rounded-xl text-base mb-3 text-gray-300 focus:text-white transition-shadow opacity-0 scale-0 translate-y-10
+    @apply bg-[#333] py-2.5 px-5 w-full rounded-xl text-base mb-3 text-gray-300 focus:text-white transition-shadow opacity-0 scale-0 translate-y-10 font-semibold
   }
 
   .button-add {
-    @apply bg-green py-2.5 px-5 w-full text-white rounded-xl text-base placeholder:text-gray-300 mb-3 opacity-0 scale-0 translate-y-10
+    @apply bg-green py-2.5 px-5 w-full text-white rounded-xl text-base placeholder:text-gray-300 mb-3 opacity-0 scale-0 translate-y-10 font-semibold
   }
 
+}
+
+#cont {
+  max-width: calc(100% - 2.5rem);
 }
 
 .button-add {
