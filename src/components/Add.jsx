@@ -17,7 +17,7 @@ const Add = () => {
 	return (
 		<div
 			id='cont'
-			className=' bg-gray-200 backdrop-blur-md rounded-[28px] fixed md:bottom-8 md:right-8 w-14 h-14 bottom-5 right-5  max-h-[88%] max-w-[88%] 
+			className=' bg-gray-200 backdrop-blur-md rounded-[28px] fixed md:bottom-8 md:right-8 w-14 h-14 bottom-5 right-5  max-h-[85%] max-w-[85%] 
 			 '
 		>
 			<div id='cont-add' className={`w-full h-full   bg-transparent `}>

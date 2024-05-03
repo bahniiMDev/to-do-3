@@ -48,7 +48,7 @@ export const useButtonAdd = () => {
 				.to(
 					'#cont',
 					{
-						width: '500px',
+						width: '320px',
 						duration: 0.6,
 						ease: 'back.out(0.5)',
 					},
@@ -57,7 +57,7 @@ export const useButtonAdd = () => {
 				.to(
 					'#cont',
 					{
-						height: '500px',
+						height: '320px',
 						duration: 0.6,
 						ease: 'back.out(0.5)',
 					},
