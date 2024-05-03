@@ -5,7 +5,7 @@ import NavBar from './NavBar'
 
 const App = () => {
 	return (
-		<div className='p-8 w-full h-full'>
+		<div className='md:p-8   p-5 w-full h-full'>
 			<NavBar />
 			<List />
 			<Add />

@@ -17,14 +17,12 @@ const Add = () => {
 	return (
 		<div
 			id='cont'
-			className=' bg-gray-200 backdrop-blur-md rounded-[28px] fixed bottom-8 right-8 w-14 h-14 max-h-[100%] 
-			'
+			className=' bg-gray-200 backdrop-blur-md rounded-[28px] fixed md:bottom-8 md:right-8 w-14 h-14 bottom-5 right-5  max-h-[100%] max-w-[88%] 
+			 '
 		>
-			<div
-				id='cont-add'
-				className='w-full h-full p-6 overflow-auto bg-transparent'
-			>
+			<div id='cont-add' className={`w-full h-full   bg-transparent `}>
 				<form
+					className='bg-transparent overflow-hidden p-6'
 					action=''
 					onSubmit={e => {
 						e.preventDefault()

@@ -9,15 +9,21 @@ export const useButtonAdd = () => {
 		if (open) {
 			gsap
 				.timeline()
-
-				.to('#item-add', {
-					opacity: 0,
-					scale: 0,
-					duration: 0.6,
-					y: '2.5rem',
-					ease: 'back.in(0.5)',
-					stagger: 0.1,
+				.to('#cont-add', {
+					overflow: 'visible',
 				})
+				.to(
+					'#item-add',
+					{
+						opacity: 0,
+						scale: 0,
+						duration: 0.6,
+						y: '2.5rem',
+						ease: 'back.in(0.5)',
+						stagger: 0.1,
+					},
+					'<'
+				)
 				.to(
 					'#cont',
 					{
@@ -42,7 +48,7 @@ export const useButtonAdd = () => {
 				.to(
 					'#cont',
 					{
-						width: 'calc(80% - 4rem)',
+						width: '400px',
 						duration: 0.6,
 						ease: 'back.out(0.5)',
 					},
