@@ -1,6 +1,7 @@
 const defaultState = {
 	inputValue: '',
-	selectVlue: '',
+	selectValue: '',
+	isError: '',
 }
 const input = 'input'
 const select = 'select'

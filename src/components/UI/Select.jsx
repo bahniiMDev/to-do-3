@@ -1,9 +1,16 @@
-import React from 'react'
+import React, { useRef } from 'react'
 
 const Select = ({ ...props }) => {
+	const selectRef = useRef()
 	return (
-		<select {...props}>
-			<option className='text-gray-200' value={''} defaultValue>
+		<select
+			ref={selectRef}
+			{...props}
+			className={` ${
+				selectRef.current?.value === '' ? 'text-gray-300' : 'text-white'
+			} ${props.className}`}
+		>
+			<option value='' defaultValue>
 				select group
 			</option>
 			{props.array.map(item => (

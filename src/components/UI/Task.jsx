@@ -7,15 +7,17 @@ const Task = ({ body, title = false, id, color, isSucsses }) => {
 	const dispatch = useDispatch()
 	return (
 		<div
-			onClick={() => {
-				if (!title) {
-					dispatch(changeSucsses(id))
+			onClick={e => {
+				if (e.target.closest('.task-123')) {
+					if (!title) {
+						dispatch(changeSucsses(id))
+					}
 				}
 			}}
 			onMouseDown={e => {
 				if (!title) {
-					gsap.to(e.target, {
-						scale: 1.025,
+					gsap.to(e.target.closest('.task-123'), {
+						scale: 1.05,
 						opacity: 0.8,
 						ease: 'back.out(1)',
 						duration: 0.6,
@@ -25,7 +27,7 @@ const Task = ({ body, title = false, id, color, isSucsses }) => {
 			}}
 			onMouseUp={e => {
 				if (!title) {
-					gsap.to(e.target, {
+					gsap.to(e.target.closest('.task-123'), {
 						scale: 1,
 						opacity: 1,
 						ease: 'back.out(1)',
@@ -34,7 +36,7 @@ const Task = ({ body, title = false, id, color, isSucsses }) => {
 					e.stopPropagation()
 				}
 			}}
-			className={`w-full flex mb-1 items-center origin-left ${
+			className={`task-123 w-full flex mb-1 items-center origin-left ${
 				!title ? 'cursor-pointer' : 'pointer-events-none'
 			}`}
 			id='task'

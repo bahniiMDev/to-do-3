@@ -21,7 +21,6 @@ export const listReducer = (state = defaultState, action) => {
 				accumulator.push(currentValue)
 				return accumulator
 			}, initialValue)
-
 			return { ...state, items: sumWithInitial }
 		default:
 			return state

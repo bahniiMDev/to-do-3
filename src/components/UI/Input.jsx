@@ -1,7 +1,7 @@
 import React, { forwardRef } from 'react'
 
-const Input = forwardRef((props, ref) => {
+const Input2 = forwardRef((props, ref) => {
 	return <input ref={ref} {...props} />
 })
 
-export default Input
+export default Input2

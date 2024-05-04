@@ -18,16 +18,18 @@ body {
   }
 
   .input-add {
-    @apply bg-[#333] py-2.5 px-5 w-full text-white rounded-xl text-base placeholder:text-gray-300 mb-3 opacity-0 scale-0 translate-y-10 transition-shadow font-semibold
+    @apply bg-[#333] py-2.5 px-5 w-full text-white rounded-xl text-base placeholder:text-gray-300 opacity-0 scale-0 translate-y-10 transition-shadow font-semibold
   }
 
+
   .select-add {
-    @apply bg-[#333] py-2.5 px-5 w-full rounded-xl text-base mb-3 text-gray-300 focus:text-white transition-shadow opacity-0 scale-0 translate-y-10 font-semibold
+    @apply bg-[#333] py-2.5 px-5 w-full rounded-xl text-base transition-shadow opacity-0 scale-0 translate-y-10 font-semibold
   }
 
   .button-add {
-    @apply bg-green py-2.5 px-5 w-full text-white rounded-xl text-base placeholder:text-gray-300 mb-3 opacity-0 scale-0 translate-y-10 font-semibold
+    @apply bg-green py-2.5 px-5 w-full text-white rounded-xl text-base placeholder:text-gray-300 opacity-0 scale-0 translate-y-10 font-semibold
   }
+
 
 }
 
@@ -43,6 +45,8 @@ body {
 .button-add:hover {
   box-shadow: 0px 5px 30px -10px rgb(50, 215, 75);
 }
+
+
 
 #cont-add::-webkit-scrollbar {
   width: 0;
@@ -107,8 +111,8 @@ select::-ms-expand {
 
 select:focus,
 input:focus {
-  box-shadow: 0 0 0px 3px rgb(10, 132, 255);
-  box-shadow: 0 0 0 3px -moz-mac-focusring;
+  box-shadow: 0 0 0px 2px rgb(10, 132, 255);
+  box-shadow: 0 0 0 2px -moz-mac-focusring;
 }
 
 select option {
@@ -127,7 +131,46 @@ input::-webkit-keygen-select {
   background: #000;
 }
 
-.input-add {
-  background-color: #333 !important;
+.input-add,
+.select-add {
   font-size: 16px !important;
+  transition: box-shadow 0.4 ease;
+}
+
+.error {
+  box-shadow: 0 0 0px 2px rgb(255, 69, 58);
+}
+
+.error:focus {
+  box-shadow: 0 0 0px 2px rgb(255, 69, 58);
+}
+
+.label-error {
+  position: relative;
+  opacity: 0;
+  overflow: hidden;
+  height: 0px;
+  margin-top: 0;
+  transition: height 0.2s 0.1s ease, margin 0.2s 0.1s ease, opacity 0.2s ease;
+  margin-bottom: 0.75rem;
+  color: rgb(255, 69, 58);
+  font-size: 0.875rem;
+  padding: 0 0.25rem;
+}
+
+.label-error.activ {
+  opacity: 1;
+  transition: height 0.2s ease, margin 0.2s ease,
+    opacity 0.2s 0.1s ease;
+  height: 20px;
+  margin-top: 0.25rem;
+  margin-bottom: 0.5rem;
+}
+
+@media (width < 378px) {
+
+  .label-error.activ {
+    height: 40px;
+  }
+
 }

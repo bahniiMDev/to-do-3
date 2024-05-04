@@ -1,11 +1,12 @@
 import React, { forwardRef } from 'react'
 
-const AddButton = forwardRef(({ onClickButton, open }, inputRef) => {
+const AddButton = forwardRef(({ onClickButton, setErrors, open }, inputRef) => {
 	return (
 		<button
 			id='button'
 			onClick={() => {
 				onClickButton()
+				setErrors({ inpu: false, select: false })
 				!open
 					? setTimeout(() => {
 							inputRef.current.focus()
