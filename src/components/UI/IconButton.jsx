@@ -1,7 +1,7 @@
 import React from 'react'
 
-const IconButton = ({ children, className }) => {
-	return <button className={className}>{children}</button>
+const IconButton = ({ children, ...props }) => {
+	return <button {...props}>{children}</button>
 }
 
 export default IconButton

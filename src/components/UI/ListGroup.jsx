@@ -4,7 +4,7 @@ import Task from './Task'
 const ListGroup = ({ body, color, children }) => {
 	return (
 		<div
-			className='p-8 bg-gray-200 rounded-[28px] mb-4 flex
+			className='p-8 bg-gray-200 rounded-[28px]  flex
 		flex-col overflow-auto'
 		>
 			<Task title={true} body={body} color={color} />
