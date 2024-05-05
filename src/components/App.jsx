@@ -1,14 +1,14 @@
 import React from 'react'
-import Add from './Add'
-import List from './List'
-import NavBar from './NavBar'
+import Blur from './Blur'
+import Controls from './Controls'
+import Main from './Main'
 
 const App = () => {
 	return (
-		<div className='md:p-8   p-5 w-full h-full'>
-			<NavBar />
-			<List />
-			<Add />
+		<div className='app-menu-cont'>
+			<Controls />
+			<Blur />
+			<Main />
 		</div>
 	)
 }

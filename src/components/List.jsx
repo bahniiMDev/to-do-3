@@ -7,7 +7,7 @@ const List = () => {
 	const items = useSelector(state => state.list.items)
 	const groups = useSelector(state => state.list.groups)
 	return (
-		<main>
+		<main className='flex flex-col gap-4'>
 			{items.length > 0 ? (
 				groups.map(item => (
 					<ListGroup key={item.color} {...item}>

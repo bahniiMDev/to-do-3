@@ -1,16 +1,25 @@
 import React from 'react'
+import { Route, Switch } from 'react-router-dom/cjs/react-router-dom'
 import { searchImg } from '../utils'
+import MenuButton from './MenuButton'
+import Title from './Title'
 import IconButton from './UI/IconButton'
 
 const NavBar = () => {
 	return (
 		<header className='w-full flex items-center mb-8 justify-between'>
-			<IconButton className='menu mr-4 min-[400px]:mr-8 w-[24px] h-[24px] flex flex-col justify-center gap-[0.3rem]'>
-				<span className='w-[65%] h-[3px] rounded-full bg-white block'></span>
-				<span className='w-full h-[3px] rounded-full bg-white block'></span>
-				<span className='w-[65%] h-[3px] rounded-full bg-white block'></span>
-			</IconButton>
-			<h1 className='flex-auto text-3xl font-semibold'>All Task</h1>
+			<MenuButton />
+			<Switch>
+				<Route path={'/posts/:text'} exact>
+					<Title />
+				</Route>
+				<Route path={'/'} exact>
+					<Title text={'All Task'} />
+				</Route>
+				<Route path={'/posts'} exact>
+					<Title text={'All Task'} />
+				</Route>
+			</Switch>
 			<IconButton className='bg-gray-200 p-2.5 rounded-full'>
 				<img src={searchImg} width={16} height={16} alt='search' />
 			</IconButton>
