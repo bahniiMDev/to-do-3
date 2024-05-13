@@ -7,11 +7,7 @@ body {
   margin: 0;
   min-width: 320px;
   min-height: 100dvh;
-<<<<<<< HEAD
   background: #151515;
-=======
-  background: #202020;
->>>>>>> origin/main
   color: #fff;
 }
 
@@ -191,42 +187,30 @@ input::-webkit-keygen-select {
 
 .app {
   min-height: 100dvh;
-<<<<<<< HEAD
   transition: 0.4s scale 0.3s ease, 0.4s box-shadow 0.3s ease, 0.4s 0.3s border-radius, 0.4s 0.2s translate ease;
   scale: 1;
   border-radius: 0px;
   pointer-events: all;
   box-shadow: 0px 0px 0px 0px#202020;
-=======
-  transition: 0.6s all ease;
-  scale: 1;
-  border-radius: 28px;
-  box-shadow: 0px 0px 0px 0px #202020;
->>>>>>> origin/main
-  will-change: auto;
+
 }
 
 .menu-activ-app {
   scale: 0.8;
-<<<<<<< HEAD
   translate: 50%;
   transition: 0.4s scale ease, 0.4s box-shadow ease,
     0.4s 0.2s translate ease, 0.4s 0s border-radius ease;
   border-radius: 28px;
   box-shadow: 0px 0px 0px 2px rgba(118, 118, 128, 0.24), -80px 80px 80px -60px #0000007f;
   pointer-events: none;
-=======
   translate: 40%;
-  box-shadow: 0px 0px 0px 2px rgba(118, 118, 128, 0.24), -80px 50px 100px -50px #000;
-  filter: blur(6px);
->>>>>>> origin/main
+
 }
 
 .app-menu-cont {
   min-height: 100dvh;
   width: 100vw;
   overflow-x: hidden;
-<<<<<<< HEAD
 }
 
 .group-button {
@@ -241,6 +225,4 @@ input::-webkit-keygen-select {
 .blur-cont-active {
   backdrop-filter: blur(6px);
   transition: 0.4s backdrop-filter ease,
-=======
->>>>>>> origin/main
 }
